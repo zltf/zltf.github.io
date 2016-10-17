@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	  
+	<!--引入bmob的SDK-->
+	<script type="text/javascript" src="js/bmob.js"></script>
+	<script type="text/javascript" src="js/my-bmob.js"></script>
+
+
+	<title>竹林听风-每日作业</title>
+	<link href="image/logo.png" rel="shortcut icon"/>
+
+  </head>
+
+  <body>
+
+    <script type="text/javascript">
+	  //初始化bmob的SDK
+	  initMyBmob();
+    </script>
+	
+	<ul class="collapsible" data-collapsible="expandable">
+	  <li>
+		
+		<div class="collapsible-header">
+		  <i class="mdi-action-receipt"></i>语文
+		</div>
+		<div class="collapsible-body" id="语文">
+		  <p>test</p>
+		</div>
+	  </li>
+	  
+	  <li>
+		<div class="collapsible-header">
+		  <i class="mdi-action-track-changes"></i>数学
+		</div>
+		<div class="collapsible-body" id="数学">
+		  
+		</div>
+	  </li>
+	  
+	  <li>
+		<div class="collapsible-header">
+		  <i class="mdi-av-explicit"></i>英语
+		</div>
+		<div class="collapsible-body" id="英语">
+		  
+		</div>
+	  </li>
+	  
+	  <li>
+		<div class="collapsible-header">
+		  <i class="mdi-device-now-widgets"></i>物理
+		</div>
+		<div class="collapsible-body" id="物理">
+		  
+		</div>
+	  </li>
+	  
+	  <li>
+		<div class="collapsible-header">
+		  <i class="mdi-communication-invert-colors-on"></i>化学
+		</div>
+		<div class="collapsible-body" id="化学">
+		  
+		</div>
+	  </li>
+	  
+	  <li>
+		<div class="collapsible-header">
+		  <i class="mdi-maps-local-florist"></i>生物
+		</div>
+		<div class="collapsible-body" id="生物">
+		  
+		</div>
+	  </li>
+	  
+	  <li>
+		<div class="collapsible-header">
+		  <i class="mdi-action-stars"></i>P.S
+		</div>
+		<div class="collapsible-body" id="P.S">
+		  
+		</div>
+	  </li>
+	  
+	</ul>
+
+    <script type="text/javascript">
+	  getValueByDate("homework_list");
+    </script>
+	
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>
