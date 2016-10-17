@@ -1,187 +1,40 @@
-a:hover,a:focus{
-    text-decoration: none;
-    outline: none;
-}
-#accordion .panel{
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
-    margin-bottom: -5px;
-}
-#accordion .panel-heading{
-    padding: 0;
-    border-radius: 0;
-    border: none;
+body {
+    background: #eee;
     text-align: center;
+    padding: 0 25px;
 }
 
-/*黑色超链接*/
-#accordion .panel-title-black a{
-    text-decoration: none;
-    display: block;
-    padding: 25px 30px;
+#main {
+    width: 500px;
+    margin: auto;
+    text-align: left;
+    background: white;
+    padding: 50px 60px;
+    border: solid #ddd;
+    border-width: 0 1px 1px 1px;
+}
+
+#main h1 {
+    margin-top: 0;
     font-size: 35px;
-    font-weight: bold;
-    color: #fff;
-    background: #333;/*背景颜色*/
-    border-bottom: 1px solid #4a4a4a;
-    position: relative;
-    transition: all 0.5s ease 0s;
 }
 
-#accordion .panel-title-black a:hover{
-    background: #4a4a4a;
-}
-#accordion .panel-title-black a:after,
-#accordion .panel-title-black a.collapsed:after{
-    content: "♚";/*字符*/
-    font-family: FontAwesome;
-    font-size: 30px;/*字符大小*/
-    font-weight: 200;
-	color:White;
-    position: absolute;
-    top: 25px;
-    left: 15px;
-    transform: rotate(-45deg);/*角度*/
-    transition: all 0.5s ease 0s;
-}
-#accordion .panel-title-black a.collapsed:after{
-    transform: rotate(0deg);
+#main ul {
+    padding-left: 20px;
 }
 
-/*橙色超链接*/
-#accordion .panel-title-orange a{
-    text-decoration: none;
-    display: block;
-    padding: 25px 30px;
-    font-size: 35px;
-    font-weight: bold;
-    color: #fff;
-    background: #FA9F4A;/*背景颜色*/
-    border-bottom: 1px solid #F38B41;
-    position: relative;
-    transition: all 0.5s ease 0s;
+#main .error {
+    border: 1px solid red;
+    background: #FDEFF0;
+    padding: 20px;
 }
 
-#accordion .panel-title-orange a:hover{
-    background: #F38349;
-}
-#accordion .panel-title-orange a:after,
-#accordion .panel-title-orange a.collapsed:after{
-    content: "★";/*字符*/
-    font-family: FontAwesome;
-    font-size: 30px;/*字符大小*/
-    font-weight: 200;
-	color:White;
-    position: absolute;
-    top: 25px;
-    left: 15px;
-    transform: rotate(-45deg);/*角度*/
-    transition: all 0.5s ease 0s;
-}
-#accordion .panel-title-orange a.collapsed:after{
-    transform: rotate(0deg);
+#main .success {
+    margin-top: 25px;
 }
 
-/*蓝色*/
-#accordion .panel-body-blue{
-    background: #178DFB;/*文本背景头!*/
-    padding: 0 0 0 40px;
-    border: none;
-    position: relative;
-}
-#accordion .panel-body-blue p{
-    font-size: 30px;
-    color: #fff;
-    line-height: 25px;
-    background: #349BF9;/*文本背景*/
-    padding: 30px;
-    margin: 0;
-}
-
-#accordion .panel-body-blue p:hover{
-    background: #2F71EB;
-}
-#accordion .panel-body-blue p:after,
-#accordion .panel-body-blue p.collapsed:after{
-    content: "♛";/*字符*/
-    font-family: FontAwesome;
-    font-size: 30px;/*字符大小*/
-    font-weight: 200;
-	color:White;
-    position: absolute;
-    top: 25px;
-    right: 15px;
-    transform: rotate(45deg);/*角度*/
-    transition: all 0.5s ease 0s;
-}
-#accordion .panel-body-blue p.collapsed:after{
-    transform: rotate(0deg);
-}
-
-/*橙色*/
-#accordion .panel-body-orange{
-    background: #F38B41;/*文本背景头!*/
-    padding: 0 0 0 40px;
-    border: none;
-    position: relative;
-}
-#accordion .panel-body-orange p{
-    font-size: 30px;
-    color: #fff;
-    line-height: 25px;
-    background: #FA9F4A;/*文本背景*/
-    padding: 30px;
-    margin: 0;
-}
-
-#accordion .panel-body-orange p:hover{
-    background: #FF7408;
-}
-#accordion .panel-body-orange p:after,
-#accordion .panel-body-orange p.collapsed:after{
-    content: "♞";/*字符*/
-    font-family: FontAwesome;
-    font-size: 30px;/*字符大小*/
-    font-weight: 200;
-	color:White;
-    position: absolute;
-    top: 25px;
-    right: 15px;
-    transform: rotate(45deg);/*角度*/
-    transition: all 0.5s ease 0s;
-}
-#accordion .panel-body-orange p.collapsed:after{
-    transform: rotate(0deg);
-}
-
-#accordion .panel-collapse .panel-body-blue p{
-    opacity: 0;
-    transform: scale(0.9);
-    transition: all 0.5s ease-in-out 0s;
-}
-#accordion .panel-collapse.in .panel-body-blue p{
-    opacity: 1;
-    transform: scale(1);
-}
-
-#accordion .panel-collapse .panel-body-orange p{
-    opacity: 0;
-    transform: scale(0.9);
-    transition: all 0.5s ease-in-out 0s;
-}
-#accordion .panel-collapse.in .panel-body-orange p{
-    opacity: 1;
-    transform: scale(1);
-}
-
-.main-title/*标题*/
-{
-  font-size:80px;
-  color:White;
-}
-
-body
-{
-  background-color:#31ABFF;
+#main .success code {
+    font-size: 12px;
+    color: green;
+    line-height: 13px;
 }
