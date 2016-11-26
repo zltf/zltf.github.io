@@ -35,6 +35,7 @@
       testObject.save({foo: "bar"}, {
       success: function(object) {
         $(".success").show();
+		s=object.id;
       },
       error: function(model, error) {
         $(".error").show();
